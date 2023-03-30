@@ -189,6 +189,14 @@ section:nth-child(3){
 .btn:hover{
     transform: scale(1.2);
 }
+.modal{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ee5057;
+    margin: 5%;
+    border: 2px solid #ee5057;
+}
 .cardPlaces{
     width: 265px;
     margin-left: 10px;
