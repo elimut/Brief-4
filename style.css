@@ -150,6 +150,7 @@ section:nth-child(3){
     width: 400px;
     overflow: hidden;
     position: relative;
+    margin: 1% 2%;
 }
 #carrousel #container{
     width: 1600px;
@@ -193,9 +194,17 @@ section:nth-child(3){
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #ee5057;
+    background-color: #e2d2d2ed;
     margin: 5%;
     border: 2px solid #ee5057;
+    top: 20%;
+    width: 90%;
+    height: 60%;
+    border-radius: 2%;
+    text-align: center;
+}
+.modal p{
+    margin: 20px;
 }
 .cardPlaces{
     width: 265px;

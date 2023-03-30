@@ -4,11 +4,15 @@ document.body.onload = function(){
     // déclaration varibale nbr qui est le nombre de card constituant le carousel
     let p = 0;
     // déclaration variable p, en position 0, qui ensuite sera décalée vers droite ou gauche
+    let tailleImage = document.querySelector(".card img").offsetWidth;
+    console.log(tailleImage)
     let container = document.querySelector("#container");
     // déclaration variable container qui contient les card, en HTML div id container, il servira de base pour faire défiler le carousel
-    container.style.width = (190 * nbr) + "px";
+    container.style.width = (`${tailleImage}` * nbr) + "px";
+    // container.style.width = (190 * nbr) + "px";
     let carousel = document.querySelector("#carrousel");
-    carousel.style.width = "190px";
+    carousel.style.width = tailleImage + "px";
+    // carousel.style.width = "190px";
     // application d'une taille à la div carrousel afin qu'elle ait la taille de mon image afin qu'il puisse contenir toutes les card à faire défiler.Ici les card font 190px multiplié par le nombre card.
     let g = document.getElementById("g");
     let d = document.getElementById("d");
@@ -32,7 +36,8 @@ document.body.onload = function(){
     d.onclick = function(){
         if (p > -nbr + 1) {
             p--;
-            container.style.transform = "translate("+p*190+"px)";
+            container.style.transform = "translate("+p*tailleImage+"px)";
+            // container.style.transform = "translate("+p*190+"px)";
             container.style.transition = "all 0.5s ease";
             afficherMasquer();
         };
@@ -43,7 +48,8 @@ document.body.onload = function(){
     g.onclick = function(){
         if (p < 0) {
             p++;
-            container.style.transform = "translate("+p*190 +"px)";
+            container.style.transform = "translate("+p*tailleImage +"px)";
+            // container.style.transform = "translate("+p*190 +"px)";
             container.style.transition = "all 0.5s ease";
             afficherMasquer();
         };
@@ -56,7 +62,7 @@ document.body.onload = function(){
     /* Création image de la popUp et du paragraphe*/ 
     const buttons = document.querySelectorAll('.card button');
     /*Récupération des boutons de card*/
-
+    const croix = document.createElement("button");
 
     popUp.classList.add('modal');
     popUp.style.display = 'none';
@@ -67,7 +73,7 @@ document.body.onload = function(){
     popUp.appendChild(parag);
     /*ajout de la l'image et paragraphe à la popup*/
     document.body.appendChild(popUp);
-    /*Ajout popup*/
+    /*Ajout popup finale car lecture synchrone*/
 
 
     popUp.addEventListener('click', () => {
@@ -81,23 +87,19 @@ document.body.onload = function(){
         const index = Array.from(buttons).indexOf(button);
         /*Récupération de l'index du bouton pour pouvoir afficher l'image adéquate. Console.log => tablea de 8 éléments*/
         image.src = `./img/img${index + 1}.jpg`;
-        /*Application source de limage popup avec index */
-        parag.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus sit dolorum aliquam, est ab similique praesentium totam deserunt excepturi.`;
+        /*Application source de l' image popup avec index */
+        parag.textContent = `
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nostrum doloribus sit dolorum aliquam, est ab similique praesentium totam deserunt excepturi.   `;
         popUp.style.display = "flex";
         popUp.style.position = "fixed";
         /*apparition popup au clic sur bouton*/ 
         // let rect = popUp.getBoundingClientRect();
         // console.log(rect)
         // popUp.style.position = `${rect}`;
-        popUp.style.top = "30%"
         });
     });
 }
-console.log(window.innerWidth);
-
-
-
-
 
 /*Création popUp à travailler => voir map, boucle et bouncingelement*/
 
