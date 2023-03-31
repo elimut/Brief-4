@@ -146,6 +146,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
  problème : devoir recharger la page pour bien dimensionner le carousel avec offSetWidth?
 voir fonctionnement du offsetTop
 problème avec changement icone burger lors de la resize, revoir ternaire
-voir ajouter close pop up
  */
 
