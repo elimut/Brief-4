@@ -1,6 +1,5 @@
-/*Création menu burger responsive*/
 window.addEventListener("DOMContentLoaded", (event) => {
-    /* MENU */
+     /*Création menu burger responsive*/ 
     const LeMenu = document.querySelector("nav ul");
     LeMenu.setAttribute = ("id", "LeMenu");
     /*attribution id à la liste pour le mediaquiery*/
