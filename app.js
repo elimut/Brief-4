@@ -30,6 +30,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       var ww = window.innerWidth;
       /*ww correspond à la dimension de la page */ 
       LeMenu.style.display = ( ww > 900 )? '':'none';
+        /*LeMenu.style.display = ( ww > 900 ) && 'none', option possible de ternaire si une seule condition*/
       CmdMenu.style.display = ( ww > 900 )? 'none':'';
     };
 
@@ -126,6 +127,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
     buttons.forEach((button) => {
+    /* buttons.forEach((button, index) => {, évite array, index pris en compte*/
     button.addEventListener('click', () => {
         const index = Array.from(buttons).indexOf(button);
         /*Récupération de l'index du bouton pour pouvoir afficher l'image adéquate. Console.log => tablea de 8 éléments*/
