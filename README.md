@@ -1,4 +1,5 @@
 # Brief-4
+
 Réalisation d'un slider (carrousel) avec JavaScript
 
 
@@ -42,3 +43,27 @@ Soutenance, à l’aide d’un support de présentation vous devez présenter :
 
 Lien du dépôt github.
 Support de présentation
+
+## Google Slide, présentation
+
+![Slide 1](support_brief4/Slide_1.png)
+![Slide 1](support_brief4/Slide_2.png)
+![Slide 1](support_brief4/Slide_3.png)
+![Slide 1](support_brief4/Slide_4.png)
+![Slide 1](support_brief4/Slide_5.png)
+![Slide 1](support_brief4/Slide_6.png)
+![Slide 1](support_brief4/Slide_7.png)
+![Slide 1](support_brief4/Slide_8.png)
+![Slide 1](support_brief4/Slide_9.png)
+![Slide 1](support_brief4/Slide_10.png)
+![Slide 1](support_brief4/Slide_11.png)
+![Slide 1](support_brief4/Slide_12.png)
+![Slide 1](support_brief4/Slide_13.png)
+![Slide 1](support_brief4/Slide_14.png)
+![Slide 1](support_brief4/Slide_15.png)
+![Slide 1](support_brief4/Slide_16.png)
+![Slide 1](support_brief4/Slide_17.png)
+![Slide 1](support_brief4/Slide_18.png)
+![Slide 1](support_brief4/Slide_19.png)
+![Slide 1](support_brief4/Slide_20.png)
+![Slide 1](support_brief4/Slide_21.png)
